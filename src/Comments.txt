@@ -1,0 +1,17 @@
+Nice work! A couple of things:
+
+1. In LightSwitch.java, line 33 has a ; after closing }.
+Also, since this constructor isn't doing anything it should be deleted.
+
+2. I'm curious about your choice of "on"/"off" and "open"/"close" as your choice of arguments
+for your methods.
+
+If this is service within your app, it probably won't pass any arguments at all. Instead,
+it'll just change isLightOn to false if it's true, or change it to true if it's false
+- same with the door.
+
+On the other hand, if you're thinking of it as Alexa translating a verbal command into text,
+you'd probably need to perform tasks with string arguments like "turn the light on" or "light on".
+
+Your methods aren't incorrect - but I want to make sure you're thinking through how the complete
+app would work rather than just the specific piece that you're working on.
